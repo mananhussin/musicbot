@@ -1,0 +1,35 @@
+{
+    "name": "Express",
+    "description": "A good and functional Discord music and moderation bot in node.js.",
+    "repository": "https://github.com/ItzLightyHD/Express",
+    "logo": "https://raw.githubusercontent.com/ItzLightyHD/Express/master/logo.png",
+    "keywords": ["node", "discord", "youtube"],
+    "image": "heroku/nodejs",
+    "buildpacks": [
+      {
+        "url": "heroku/nodejs"
+      }
+    ],
+    "env": {
+      "TOKEN": {
+        "description": "The token of your Discord Bot",
+        "required": "true"
+      },
+      "PREFIX": {
+        "description": "The prefix you want to use with the bot.",
+        "required": "true"
+      },
+      "OWNERID": {
+        "description": "Your Discord user ID, needed for some commands...",
+        "required": "true"
+      },
+      "HOST": {
+        "description": "Your Lavalink host. The port must be 2333.",
+        "required": "true"
+      },
+      "HOSTPASSW": {
+        "description": "Your Lavalink host password",
+        "required": "true"
+      }
+    }  
+  }
