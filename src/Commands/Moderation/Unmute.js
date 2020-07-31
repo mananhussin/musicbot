@@ -22,7 +22,6 @@ module.exports = class extends Command {
     toUnmute.roles.remove(muteRole.id).then(() => {
         message.delete()
         toUnmute.send(`You have been unmuted in **${message.guild.name}**`)
-        console.log(`${toUnmute.user.username} was unmuted in ${message.guild.name}`)
         message.channel.send(unmuteConfirm)
     });
     }

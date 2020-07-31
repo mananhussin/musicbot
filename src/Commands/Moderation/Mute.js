@@ -47,7 +47,6 @@ module.exports = class extends Command {
 	toMute.roles.add(muteRole.id).then(() => {
 		message.delete()
 		toMute.send(`You have been muted in **${message.guild.name}** for: **${reason}**`)
-		console.log(`${toMute.user.username} was muted in ${message.guild.name} for: ${reason}`)
 		message.channel.send(muteConfirm)
 	});
     }
