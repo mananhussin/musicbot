@@ -13,7 +13,7 @@ module.exports = class ExpressClient extends Client {
         this.nodes = [
             {
                 host: options.host,
-                port: 2333,
+                port: 80,
                 password: options.hostpassw
             }
         ]

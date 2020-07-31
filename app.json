@@ -24,11 +24,13 @@
         "required": "true"
       },
       "HOST": {
-        "description": "Your Lavalink host. The port must be 2333.",
+        "description": "Your Lavalink host that must have as port 80. If you don't have a Lavalink host, just leave the value as it is.",
+        "value": "express-lavalink.herokuapp.com",
         "required": "true"
       },
       "HOSTPASSW": {
-        "description": "Your Lavalink host password",
+        "description": "Your Lavalink host password. If you don't have a Lavalink host, just leave the value as it is.",
+        "value": "youshallnotpass",
         "required": "true"
       }
     }  
