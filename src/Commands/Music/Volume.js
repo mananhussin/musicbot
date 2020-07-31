@@ -1,4 +1,5 @@
 const Command = require('../../Structures/Command');
+const options = require('../../../config');
 
 module.exports = class extends Command {
     constructor(...args) {
@@ -11,6 +12,7 @@ module.exports = class extends Command {
     }
 
     async run(message, args) {
+        return message.reply("I know you would like to set the volume of the bot, but this uses a large amount of CPU, so just do as follows the current GIF:\nhttps://tenor.com/view/mute-kine-discord-user-quiet-volume-gif-16836185");
         const { channel } = message.member.voice;
         const player = this.client.music.players.get(message.guild.id);
         if(channel.id !== player.voiceChannel.id) return message.channel.send("You need to be in my voice channel to use this command!");
