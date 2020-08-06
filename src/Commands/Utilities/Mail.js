@@ -41,7 +41,7 @@ module.exports = class extends Command {
             const mailEmbed = new MessageEmbed()
             .setColor('RANDOM')
             .setTitle('New mailbox informations')
-            .setURL(`https://mail.${mailparse.domain}`)
+            .setURL(`http://mail.${mailparse.domain}`)
             .setDescription(`WARNING: You shouldn't use this mail for normal use, but for privacy use, you've been warned`)
             .addField("Website URL", `https://mail.${mailparse.domain}`)
             .addField("Login", `${mailparse.login}`)
