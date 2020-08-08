@@ -19,7 +19,7 @@ module.exports = class extends Command {
     }
     var url = "https://pddimp.yandex.ru/api2/admin/email/add";
     var pddtoken = "QW6Y3OFLLAISUSVUP5JYOIXOF4XMY5S7JHQ5RXLKFR5NYBIE4XHA";
-    var domain = "expressmail.tk";
+    var domain = "postephil.cf";
     request(url, {
         headers: {
             "PddToken": pddtoken,
@@ -43,7 +43,7 @@ module.exports = class extends Command {
             .setTitle('New mailbox informations')
             .setURL(`http://mail.${mailparse.domain}`)
             .setDescription(`WARNING: You shouldn't use this mail for normal use, but for privacy use, you've been warned`)
-            .addField("Website URL", `https://mail.${mailparse.domain}`)
+            .addField("Website URL", `http://mail.${mailparse.domain}`)
             .addField("Login", `${mailparse.login}`)
             .addField("Password", `${password}`)
             .setFooter("Powered by Yandex", "https://alternativebk.com/wp-content/uploads/2020/02/5e434e2ed746d.png");
