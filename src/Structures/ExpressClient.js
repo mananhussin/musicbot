@@ -29,8 +29,8 @@ module.exports = class ExpressClient extends Client {
         this.once('ready', () => {
             console.log("[Express] Client started as " + this.user.tag + "!");
             this.music = new ErelaClient(this, this.nodes);
-            this.music.on('nodeConnect', () => console.log("[Erela.js] Node connected"));
-            this.music.on('nodeError', (node, error) => console.log("[Erela.js] " + error));
+            this.music.on('nodeConnect', (node) => console.log("[Erela.js] Node" + node.host + " connected"));
+            this.music.on('nodeError', (node, error) => console.log("[Erela.js (" + node.host + ")] " + error));
             this.music.on('trackStart', (player, track) => player.textChannel.send("Now playing: **" + track.title + "**"));
             this.music.on("queueEnd", player => {
 				this.music.players.destroy(player.guild.id);
