@@ -1,4 +1,4 @@
 exports.run = (client, message, args, ops) => {
-	message.reply("I'm sending you the invite to add the bot in your Discord server");
-	message.author.send(process.env.BOT_INVITE);
+	message.reply("Sending the invite in your DMs...");
+	message.author.send("https://discord.com/api/oauth2/authorize?client_id=" + client.user.id + "&permissions=8&scope=bot");
 }
