@@ -1,3 +1,7 @@
 exports.run = (client, message, args, ops) => {
-    message.reply("**Express Source v1.3**\nThis bot was never possible without Express source, and you can host your own instance for free on Heroku.\n__Heroku Deploy__ » https://heroku.com/deploy?template=https://github.com/ItzLightyHD/Express\n__Support Discord server__ » https://discord.gg/HKqb6V7");
+    let verMsg = "__**Express Classic Source**__\n";
+        verMsg += client.user.username + " is entirely made in Discord.js and other libraries.\n";
+        verMsg += "__GitHub repository:__ https://github.com/ItzLightyHD/Express/tree/classic\n";
+        verMsg += "__Heroku Deploy:__ https://heroku.com/deploy?template=https://github.com/ItzLightyHD/Express/tree/classic";
+        return message.channel.send(verMsg);
 }
