@@ -7,9 +7,9 @@ exports.run = (client, message, args, ops) => {
   .setDescription("Thank you for using **" + client.user.username + "**, here are all the commands.\nIf you have an issue with a command, report it creating an issue on our GitHub")
   .addField("🔊 Music", "`play`, `leave`, `pause`, `resume`, `search`, `skip`, `musiclink`, `volume`")
   .addField("👮‍ Moderation", "`clear` (or `purge`), `ban`, `kick`, `nick`, `mute`, `unmute`, `whois`, `destroy`")
-  .addField("🔥 Fun and Misc", "`help`, `invite`, `mcstatus`, `mcskin` (or `skin`), `8ball`, `meme`, `fotd`, `mcleaks`, `ping`")
+  .addField("🔥 Fun and Misc", "`help`, `invite`, `mcstatus`, `mcskin` (or `skin`), `8ball`, `meme`, `mcleaks`, `ping`")
   .addField("🚀 Utility", "`mail`, `covid19`, `report`, `say`")
-  .addField("🔧 Administration (advanced users and bot owner only)", "`eval`, `dev/...`")
+  .addField("🔧 Administration (advanced users and bot owner only)", "`eval`")
   .setColor('RANDOM')
   message.channel.send(helpMsg);
 }
