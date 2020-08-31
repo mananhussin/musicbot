@@ -14,4 +14,4 @@ To discover the commands, just do x!help on your Discord server
 
 Heroku offers you the possibility to host your own instance of the Discord bot, you only need a brain and some requirements for the bot to work.
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ItzLightyHD/Express/blob/classic)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ItzLightyHD/Express/tree/classic)
