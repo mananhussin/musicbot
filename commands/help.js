@@ -9,7 +9,6 @@ exports.run = (client, message, args, ops) => {
   .addField("👮‍ Moderation", "`clear` (or `purge`), `ban`, `kick`, `nick`, `mute`, `unmute`, `whois`, `destroy`")
   .addField("🔥 Fun and Misc", "`help`, `invite`, `mcstatus`, `mcskin` (or `skin`), `8ball`, `meme`, `mcleaks`, `ping`")
   .addField("🚀 Utility", "`mail`, `covid19`, `report`, `say`")
-  .addField("🔧 Administration (advanced users and bot owner only)", "`eval`")
   .setColor('RANDOM')
   message.channel.send(helpMsg);
 }
