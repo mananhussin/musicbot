@@ -10,7 +10,7 @@ exports.run = (client, message, args, ops) => {
     function genDesc() {
       for(var i in videos) {
         let resp = '';
-        resp += `**[${parseInt(i)+1}]:** \`${videos[i].videoDetails.title}\`\n`;
+        resp += `**[${parseInt(i)+1}]:** \`${videos[i].title}\`\n`;
         return resp;
       }
     }
