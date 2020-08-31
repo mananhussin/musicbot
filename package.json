@@ -6,16 +6,6 @@
   "scripts": {
     "stable": "node server.js"
   },
-  "bin": "bin.js",
-  "engines": {
-    "node": "12.16.3"
-  },
-  "pkg": {
-    "assets": [
-      "/**/*.*",
-      "/**/*"
-    ]
-  },
   "auto-updater": {
     "repo": "ItzLightyHD/Express",
     "branch": "master"
