@@ -7,14 +7,16 @@ exports.run = (client, message, args, ops) => {
     
     let videos = res.videos.slice(0, 10);
     
-    let description = for(var i in videos) {
+    function genDesc() {
+      for(var i in videos) {
       let resp = `**[${parseInt(i)+1}]:** \`${videos[i].title}\`\n`;
       return resp;
-    };
+      }
+    }
     
     const musicEmbed = new Discord.MessageEmbed()
     .setAuthor("Song selection", message.author.displayAvatarUrl)
-    .setDescription(description)
+    .setDescription(genDesc())
     .setFooter("Choose a number between" + videos.length)
     .setColor("RANDOM");
     message.channel.send(musicEmbed);
