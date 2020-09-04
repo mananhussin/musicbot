@@ -1,5 +1,5 @@
 const request = require('request');
-const Discord = require('discord.js');
+const { MessageEmbed } = require('discord.js');
 
 exports.run = (client, message, args, ops) => {
     var password = args[1];
